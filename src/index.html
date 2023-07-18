@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-  <meta charset="utf-8">
-  <title>Analizador de texto</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+    <meta name="description" content="Web para Analizar y contar caracteres de texto ingresados por el usuario.">
+    <meta name="theme-color" content="#ffffff"/>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <title>Tarjeta de crédito válida</title>
+    <link rel="apple-touch-icon" href="img/ios/192.png">
+    <link rel='manifest' href='manifest.json'>
+    <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <header>
+    <h1>Analizador de Texto </h1>
+  </header>
+  <main>
+    <div id="box1">
+      <textarea name="user-input"  cols="40" rows="10"></textarea>
+    </div>
+    <div id="box2">
+      <ul>
+        <li class="metrics">caracteres: </li>
+        <li class="metrics">Caracteres sin espacios: </li>
+        <li class="metrics">Palabras: </li>
+        <li class="metrics">Numeros: </li>
+        <li class="metrics"> suma Numeros: </li>
+        <li class="metrics">Promedio longitud: </li>
+      </ul>
+    </div>
+    <div>
+      <button id="reset-button">Limpiar</button>
+    </div>
+  </main>
+  <footer>
+      <p>Desarrollado por Eliana Osorio</p>
+  </footer>
   <script src="index.js" type="module"></script>
 </body>
 </html>
