@@ -7,6 +7,7 @@ header > h1{
     display: flex;
     justify-content: center;
     padding: 6%;
+    padding-bottom: 30%;
 }
 #box1{
     padding: 5%;
@@ -28,4 +29,23 @@ ul > li {
     border: 2px solid #ADB4B5;
     border-radius: 10px;
     background-color: #c6c9ca;
+}
+#btn-reset{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+button{
+    background-color: #bcbcbc;
+    padding: 2%;
+    width: 150px;
+    border-radius: 15px;
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+footer > p{
+    padding-top: 30%;
 }

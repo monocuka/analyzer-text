@@ -1,3 +1,11 @@
 import analyzer from './analyzer.js';
 
-//TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
+const getTextUser = () => {
+
+    const getText = document.querySelector("textarea").value;
+
+    console.log(getText);
+};
+document.addEventListener('input', getTextUser);
+
+
