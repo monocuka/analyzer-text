@@ -23,26 +23,31 @@ const analyzer = {
 
 
   getNumberCount: (text) => {
+
+    const theText = text.split(" ");
     let count = 0;
 
-    for (let i = 0; i < text.length; i++) {
-      if (text[i].charCodeAt(0) >= 48 && text[i].charCodeAt(0) <= 57 ) {
+    for (let i = 0; i < theText.length; i++) {
+      if (!isNaN(theText[i])) {
         count++
       }
+      
     }
     return count;
   },
 
   getNumberSum: (text) => {
 
-    let count = 0;
-    for (let i = 0; i < text.length; i++) {
-      if (text[i].charCodeAt(0) >= 48 && text[i].charCodeAt(0) <= 57 ) {
-        count += parseInt(text[i])
-      }
-    }
-   return count;
-  }
+    const theText = text.split(" ");
+
+    const numbersArray = theText.filter(Number);
+
+    return numbersArray.length === 0 ? 0 : numbersArray.reduce((a,b) => parseFloat(a) +parseFloat(b));
+    // for (let i = 0; i < numbersArray.length; i++) {
+    //   count += parseFloat(numbersArray[i]);
+    // } this for cicle is the same as the reduce method 
+    
+  },
 };
 
 export default analyzer;

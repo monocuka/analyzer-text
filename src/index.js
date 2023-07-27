@@ -16,7 +16,17 @@ const getTextUser = () => {
   document.getElementById("nums").innerHTML = theNumberText;
   const sumNumber = analyzer.getNumberSum(getText);
   document.getElementById("sum").innerHTML = sumNumber;
+
 };
 document.addEventListener('input', getTextUser);
 
+const cleanTextArea = () => {
+  document.querySelector("textarea").value = "";
+  //clean values for buttons
+  document.querySelectorAll(".result").forEach((div) => {
+    div.textContent = "";
+  });
+}
+const cleanBtn = document.getElementById("reset-button")
+cleanBtn.addEventListener('click', cleanTextArea )
 
