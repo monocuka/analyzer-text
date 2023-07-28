@@ -19,7 +19,18 @@ const analyzer = {
   },
 
 
-  getAverageWordLength: (text) => (analyzer.getCharacterCountExcludingSpaces(text) / analyzer.getWordCount(text)).toFixed(2),
+  getAverageWordLength: (text) =>{
+    const textCharacter = text.toLowerCase();
+    let count = 0;
+
+    for (let i = 0; i < textCharacter.length; i++) {
+      if (textCharacter[i].charCodeAt(0) >= 33 ) {
+        count++
+      }
+      
+    }
+    return parseFloat((count / analyzer.getWordCount(text)).toFixed(2)); 
+  },
 
 
   getNumberCount: (text) => {
@@ -31,7 +42,6 @@ const analyzer = {
       if (!isNaN(theText[i])) {
         count++
       }
-      
     }
     return count;
   },

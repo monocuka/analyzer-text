@@ -2,12 +2,20 @@
     margin: 0%;
     padding: 0%;
 }
-
+header {
+    width: 100%;
+}
 header > h1{
     display: flex;
     justify-content: center;
     padding: 6%;
     padding-bottom: 30%;
+}
+textarea{
+    background-color: aliceblue;
+}
+textarea[name="user-input"]{
+    color: black;
 }
 #box1{
     padding: 5%;
@@ -23,6 +31,9 @@ ul > li {
     list-style: none;
     margin: 2px;
 }
+.list{
+    width: 100%;
+}
 .metrics{
     padding: 1%;
     width: auto;
@@ -30,7 +41,7 @@ ul > li {
     border-radius: 10px;
     background-color: #c6c9ca;
 }
-#btn-reset{
+#btn-container{
     display: flex;
     justify-content: center;
     padding: 5%;
@@ -40,6 +51,10 @@ button{
     padding: 2%;
     width: 150px;
     border-radius: 15px;
+}
+#reset-button{
+    color: black;
+
 }
 footer{
     width: 100%;
