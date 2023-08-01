@@ -37,11 +37,14 @@ ul{
     flex-wrap: wrap;
 }
 ul > li {
+    
     list-style: none;
     margin: 2px;
 }
 .list{
     width: 90%;
+    display: flex;
+    justify-content: center;
 }
 .metrics{
     padding: 1%;
