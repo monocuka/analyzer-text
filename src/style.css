@@ -4,15 +4,22 @@
 }
 header {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+header > img{
+    width: 70%;
 }
 header > h1{
     display: flex;
     justify-content: center;
     padding: 6%;
-    padding-bottom: 30%;
+    padding-bottom: 5%;
 }
 textarea{
-    background-color: aliceblue;
+    background-color: rgb(242, 247, 241);
 }
 textarea[name="user-input"]{
     color: black;
@@ -32,7 +39,7 @@ ul > li {
     margin: 2px;
 }
 .list{
-    width: 100%;
+    width: 90%;
 }
 .metrics{
     padding: 1%;
@@ -63,4 +70,8 @@ footer{
 }
 footer > p{
     padding-top: 30%;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
